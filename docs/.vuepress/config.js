@@ -1,25 +1,37 @@
 const moment = require('moment');
-
+moment.locale("zh-cn");
 module.exports = {
-  title:'小土神的一天',
-  description:'小土神的一天',
+  base: "/docs/",
+  title: '小土神的一天',
+  description: '小土神的一天',
   head: [
-    ['meta', { name: 'author', content:'小土神的一天'}],
-    ['meta', { name: 'keywords', content:'vuepress 介绍,vuepress 说明,小土神的一天'}],
+    ['meta', { name: 'author', content: '小土神的一天' }],
+    ['meta', { name: 'keywords', content: 'vuepress 介绍,vuepress 说明,小土神的一天' }],
     ['link', { rel: 'icon', href: 'assets/img/logo.jpg' }]
   ],
-  plugins: [
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          const moment = require('moment')
-          moment.locale(lang)
-          return moment(timestamp).format('LLL')
-        }
+  plugins: {
+    '@vuepress/last-updated': {
+      transformer: (timestamp) => {
+        return moment(timestamp).format('LLL')
       }
-    ]
-  ],
+    },
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用",
+        buttonText: "刷新"
+      }
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+      // 其他的 Vssue 配置
+      owner: 'whylearn',
+      repo: 'docs',
+      clientId: '009856e4777a4b1157e9',
+      clientSecret: '5243b5d59cff4bb75d988d63022dd9f971c1d7a2',
+    },
+  },
   themeConfig: {
     logo: '/assets/img/hero.png',
     lastUpdated: '更新时间',
@@ -50,7 +62,7 @@ module.exports = {
         'about-1', /* /bar/three.html */
         'about-2'   /* /bar/four.html */
       ],
-      
+
     }
 
   }
