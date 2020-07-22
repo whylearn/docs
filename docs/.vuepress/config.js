@@ -1,4 +1,6 @@
 const moment = require('moment');
+const secret = require('./secret');
+
 moment.locale("zh-cn");
 module.exports = {
   base: "/docs/",
@@ -23,14 +25,15 @@ module.exports = {
       }
     },
     '@vssue/vuepress-plugin-vssue': {
-      // 设置 `platform` 而不是 `api`
       platform: 'github-v4',
-      // 其他的 Vssue 配置
       owner: 'whylearn',
       repo: 'docs',
-      clientId: '009856e4777a4b1157e9',
-      clientSecret: '5243b5d59cff4bb75d988d63022dd9f971c1d7a2',
+      clientId: 'secret.clientId',
+      clientSecret: 'secret.clientSecret',
+      autoCreateIssue:true
     },
+    '@vuepress/back-to-top':true
+    
   },
   themeConfig: {
     logo: '/assets/img/hero.png',
@@ -65,5 +68,6 @@ module.exports = {
 
     }
 
-  }
+  },
+  
 }

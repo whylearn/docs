@@ -20,11 +20,13 @@
   },
   "homepage": "https://github.com/whylearn/docs#readme",
   "dependencies": {
+    "@vssue/api-github-v4": "^1.4.0",
     "@vssue/api-gitlab-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
     "moment": "^2.27.0"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-pwa": "^1.5.2"
   }
 }
