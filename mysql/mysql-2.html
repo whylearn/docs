@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL的下载、安装2 | 小土神的一天</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="assets/img/logo.jpg">
+    <meta name="description" content="小土神的一天">
+    <meta name="author" content="小土神的一天">
+    <meta name="keywords" content="vuepress 介绍,vuepress 说明,小土神的一天">
+    <link rel="preload" href="/docs/assets/css/0.styles.03cd8597.css" as="style"><link rel="preload" href="/docs/assets/js/app.0074e68f.js" as="script"><link rel="preload" href="/docs/assets/js/2.72ed53e7.js" as="script"><link rel="preload" href="/docs/assets/js/13.3a491eaf.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.ebdb0c72.js"><link rel="prefetch" href="/docs/assets/js/11.bd81dd97.js"><link rel="prefetch" href="/docs/assets/js/12.10ee0e3b.js"><link rel="prefetch" href="/docs/assets/js/3.ca555df2.js"><link rel="prefetch" href="/docs/assets/js/4.abfd3449.js"><link rel="prefetch" href="/docs/assets/js/5.6f3b5202.js"><link rel="prefetch" href="/docs/assets/js/6.9def67f7.js"><link rel="prefetch" href="/docs/assets/js/7.4dcc2afc.js"><link rel="prefetch" href="/docs/assets/js/8.7f07e742.js"><link rel="prefetch" href="/docs/assets/js/9.7e53b3ce.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.03cd8597.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/assets/img/hero.png" alt="小土神的一天" class="logo"> <span class="site-name can-hide">小土神的一天</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/docs/about1.html" class="nav-link">
+  GitHub
+</a></div><div class="nav-item"><a href="/docs/about2.html" class="nav-link">
+  黑科技
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/docs/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/docs/about1.html" class="nav-link">
+  GitHub
+</a></div><div class="nav-item"><a href="/docs/about2.html" class="nav-link">
+  黑科技
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/docs/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/mysql/" aria-current="page" class="sidebar-link">MySQL</a></li><li><a href="/docs/mysql/mysql-1.html" class="sidebar-link">MySQL的下载、安装</a></li><li><a href="/docs/mysql/mysql-2.html" aria-current="page" class="active sidebar-link">MySQL的下载、安装2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#我是2" class="sidebar-link">我是2</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#一、mysql的下载" class="sidebar-link">一、Mysql的下载</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#二、mysql的环境变量的配置" class="sidebar-link">二、Mysql的环境变量的配置</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#三、添加两个文件data和mysql-ini" class="sidebar-link">三、添加两个文件data和mysql.ini</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#四、cmd命令" class="sidebar-link">四、cmd命令</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#五、出现错误解决" class="sidebar-link">五、出现错误解决</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#mysql下载找不到msvcp" class="sidebar-link">mysql下载找不到MSVCP</a></li><li class="sidebar-sub-header"><a href="/docs/mysql/mysql-2.html#mysql-安装-找不到vcruntime140-1-dll" class="sidebar-link">MySQL安装找不到VCRUNTIME140_1.dll</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="我是2"><a href="#我是2" class="header-anchor">#</a> 我是2</h2> <h2 id="一、mysql的下载"><a href="#一、mysql的下载" class="header-anchor">#</a> 一、Mysql的下载</h2> <ul><li><h3 id="可以到官网下载"><a href="#可以到官网下载" class="header-anchor">#</a> 可以到官网下载</h3></li></ul> <h4 id="https-www-mysql-com"><a href="#https-www-mysql-com" class="header-anchor">#</a> https://www.mysql.com/</h4> <ul><li><h3 id="或百度云下载-8-0-19版本"><a href="#或百度云下载-8-0-19版本" class="header-anchor">#</a> 或百度云下载 8.0.19版本</h3></li></ul> <h4 id="https-pan-baidu-com-s-1txk4lqxog8sivl111kf9ta"><a href="#https-pan-baidu-com-s-1txk4lqxog8sivl111kf9ta" class="header-anchor">#</a> https://pan.baidu.com/s/1TxK4lQxOG8sIvl111KF9TA</h4> <h4 id="提取码：ptdc"><a href="#提取码：ptdc" class="header-anchor">#</a> 提取码：ptdc</h4> <h2 id="二、mysql的环境变量的配置"><a href="#二、mysql的环境变量的配置" class="header-anchor">#</a> 二、Mysql的环境变量的配置</h2> <p><img src="/assets/mysql/mysql_1.png" alt="Image text"> <img src="/assets/mysql/mysql_2.png" alt="Image text"></p> <h2 id="三、添加两个文件data和mysql-ini"><a href="#三、添加两个文件data和mysql-ini" class="header-anchor">#</a> 三、添加两个文件data和mysql.ini</h2> <p><img src="/assets/mysql/mysql_3.png" alt="Image text"></p> <div class="language- extra-class"><pre class="language-text"><code>[mysqld]
+#设置3306端口 
+secure_file_priv=''
+port = 3306
+# 设置mysql的安装目录 
+basedir=F:\Mysql\mysql-8.0.19-winx64
+# 设置mysql数据库的数据的存放目录
+datadir=F:\Mysql\mysql-8.0.19-winx64\data
+# 允许最大连接数
+max_connections=200 
+# 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
+# 服务端使用的字符集默认为UTF8
+character-set-server=utf8 
+# 创建新表时将使用的默认存储引擎 
+default-storage-engine=INNODB
+# 默认使用“mysql_native_password”插件认证
+default_authentication_plugin=mysql_native_password
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8
+</code></pre></div><h2 id="四、cmd命令"><a href="#四、cmd命令" class="header-anchor">#</a> 四、cmd命令</h2> <h3 id="_1、打开cmd，不需要进入安装目录（之前配置过环境变量），输入下面命令，回车（没有反应）"><a href="#_1、打开cmd，不需要进入安装目录（之前配置过环境变量），输入下面命令，回车（没有反应）" class="header-anchor">#</a> 1、打开cmd，不需要进入安装目录（之前配置过环境变量），输入下面命令，回车（没有反应）</h3> <div class="language- extra-class"><pre class="language-text"><code>mysql --initialize-insercure --user=mysql
+</code></pre></div><h3 id="_2、再输入下面命令，回车，会出现安装成功的提示"><a href="#_2、再输入下面命令，回车，会出现安装成功的提示" class="header-anchor">#</a> 2、再输入下面命令，回车，会出现安装成功的提示</h3> <div class="language- extra-class"><pre class="language-text"><code>mysql install
+</code></pre></div><h3 id="会出现安装成功的提示service-successfully-installed"><a href="#会出现安装成功的提示service-successfully-installed" class="header-anchor">#</a> 会出现安装成功的提示Service successfully installed</h3> <h3 id="_3、启动服务，输入如下命令，回车"><a href="#_3、启动服务，输入如下命令，回车" class="header-anchor">#</a> 3、启动服务，输入如下命令，回车</h3> <div class="language- extra-class"><pre class="language-text"><code>net start mysql
+</code></pre></div><h4 id="出现-mysql-服务正在启动"><a href="#出现-mysql-服务正在启动" class="header-anchor">#</a> 出现 MySQL 服务正在启动...</h4> <h4 id="mysql-服务已经启动"><a href="#mysql-服务已经启动" class="header-anchor">#</a> MySQL 服务已经启动</h4> <h3 id="_4、完成"><a href="#_4、完成" class="header-anchor">#</a> 4、完成</h3> <h2 id="五、出现错误解决"><a href="#五、出现错误解决" class="header-anchor">#</a> 五、出现错误解决</h2> <ul><li><h2 id="mysql下载找不到msvcp"><a href="#mysql下载找不到msvcp" class="header-anchor">#</a> mysql下载找不到MSVCP</h2></li></ul> <h4 id="则需要下载vc-redist-x64-exe（百度云里有）"><a href="#则需要下载vc-redist-x64-exe（百度云里有）" class="header-anchor">#</a> 则需要下载vc_redist.x64.exe（百度云里有）</h4> <ul><li><h2 id="mysql-安装-找不到vcruntime140-1-dll"><a href="#mysql-安装-找不到vcruntime140-1-dll" class="header-anchor">#</a> MySQL_安装_找不到VCRUNTIME140_1.dll</h2></li></ul> <h4 id="则需要下载微软常用运行库合集-2019-07-20-x64-exe（百度云里有）"><a href="#则需要下载微软常用运行库合集-2019-07-20-x64-exe（百度云里有）" class="header-anchor">#</a> 则需要下载微软常用运行库合集_2019.07.20_X64.exe（百度云里有）</h4></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2020年7月22日下午1点09分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/mysql/mysql-1.html" class="prev">
+        MySQL的下载、安装
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.0074e68f.js" defer></script><script src="/docs/assets/js/2.72ed53e7.js" defer></script><script src="/docs/assets/js/13.3a491eaf.js" defer></script>
+  </body>
+</html>
