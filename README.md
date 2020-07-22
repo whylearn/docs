@@ -1,2 +1,1 @@
-# docs
-vuepress博客
+'# Hello VuePress!' 
