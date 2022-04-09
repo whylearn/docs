@@ -23,7 +23,7 @@
     "@vssue/api-github-v4": "^1.4.0",
     "@vssue/api-gitlab-v4": "^1.4.0",
     "@vssue/vuepress-plugin-vssue": "^1.4.6",
-    "moment": "^2.27.0"
+    "moment": "^2.29.2"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.2",
